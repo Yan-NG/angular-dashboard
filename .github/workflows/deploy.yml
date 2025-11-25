@@ -23,7 +23,6 @@ jobs:
       - name: Artifact Upload
         uses: actions/upload-pages-artifact@v3
         with:
-          name: angular-dashboard
           path: ./dist/angular-dashboard/browser
   deploy:
     needs: build
