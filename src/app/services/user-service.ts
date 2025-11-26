@@ -21,8 +21,8 @@ export class UserService {
       catchError((error:HttpErrorResponse)=>this.handleError(error,`user with id=${id}`))
     );
   }
-  postUser(user: any) {}
-  deleteUser(id: number) {}
+  // postUser(user: any) {}
+  // deleteUser(id: number) {}
 
   handleError(error:HttpErrorResponse, label:string):Observable<never>{
     let errorMessage=`There was an error trying to get the data for ${label}`;
